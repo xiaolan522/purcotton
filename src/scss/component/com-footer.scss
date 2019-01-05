@@ -1,0 +1,115 @@
+/* 公共底部 */
+.comm-footer {
+  padding: 50px 0 80px 0;
+}
+.comm-footer > .left {
+  padding-right: 10px;
+}
+.comm-footer > .left > dl {
+  float: left;
+  margin-right: 50px;
+}
+.comm-footer > .left > dl > dt {
+  line-height: 1;
+  margin-bottom: 24px;
+}
+.comm-footer > .left > dl > dd {
+  margin-left: 0;
+  line-height: 30px;
+  font-size: 15px;
+}
+.comm-footer > .left > dl > dd > a {
+  color: #999999;
+}
+.comm-footer > .left > dl > dd > a:hover {
+  text-decoration: underline;
+}
+.comm-footer > .right li {
+  float: left;
+  margin-left: 42px;
+  text-align: center;
+}
+.comm-footer > .right li .ewm {
+  width: 87px;
+  height: 87px;
+}
+.comm-footer > .right li .tips {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #000000;
+}
+.comm-footer > .right li .tips > span {
+  margin: 0 2px;
+  color: #00937f;
+  font-weight: bold;
+}
+.comm-footer > .hr {
+  float: left;
+  width: 0;
+  height: 100px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-left: 1px solid #cccccc;
+}
+/*底部提示*/
+.foot-tip {
+  background: #eeeeee;
+}
+.foot-tip .item {
+  float: left;
+  width: 33.33%;
+  height: 94px;
+  line-height: 94px;
+  text-align: center;
+}
+.foot-tip .tip-icon {
+  margin: 0 16px;
+  display: inline-block;
+  font-size: 36px;
+  vertical-align: middle;
+  color: #333333;
+  *display: inline;
+  *zoom: 1;
+}
+.foot-tip .tip-word {
+  font-size: 16px;
+  color: #666666;
+}
+.comm-footer-bottom {
+  padding-bottom: 32px;
+}
+.comm-footer-bottom .more-link {
+  padding: 28px 0 15px;
+}
+.comm-footer-bottom .more-link > li {
+  float: left;
+  margin-right: 26px;
+}
+.comm-footer-bottom .more-link > li > a {
+  color: #000000;
+  font-size: 12px;
+}
+.comm-footer-bottom .more-link > li > a:hover {
+  text-decoration: underline;
+}
+.comm-footer-bottom .copyright {
+  color: #999999;
+  font-size: 12px;
+}
+.comm-footer-bottom .customer-services {
+  text-align: right;
+  line-height: 1;
+}
+.comm-footer-bottom .customer-services .title {
+  font-size: 12px;
+  color: #000000;
+}
+.comm-footer-bottom .customer-services .phone {
+  font-size: 20px;
+  color: #00937f;
+  padding: 18px 0;
+}
+.comm-footer-bottom .customer-services .time {
+  color: #999999;
+  font-size: 12px;
+}
