@@ -2,16 +2,17 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" href="css/com.css" />
-		<link rel="stylesheet" href="css/login.css" />
+		<title>登录</title>
+		<link rel="stylesheet" href="/css/com.css" />
+		<link rel="stylesheet" href="/css/login.css" />
+		<script type="text/javascript" src="/libs/require/require.js" data-main="/js/login.js"></script>
 	</head>
 	<body class="pd0">
 		<!-- 简单头部 -->
 	<div class="container clearfix pd40">
 		<div class="left">
-			<a href="https://www.purcotton.com/" title="首页">
-				<img src="https://res.purcotton.com//mres/res/mall/image/commodity/logo.png" height="36" width="448" alt="">
+			<a href="/index.html" title="首页">
+				<img src="/static/image/logo-2.png" height="36" width="448" alt="">
 			</a>
 		</div>
 	</div>
@@ -31,7 +32,7 @@
 					<div class="show-code">
 						<div class="code-tip">
 							<a href="javascript:;">
-								<img src="https://res.purcotton.com//mres/res/mall/css/img/ewm.png" alt="">
+								<img src="/static/image/ewm.png" alt="">
 							</a>
 						</div>
 						<div class="code-back hide">
@@ -42,13 +43,13 @@
 					</div>
 					<div class="code-wrap clearfix hide">
 						<div class="width50 text-center">
-							<img src="https://res.purcotton.com//mres/res/mall/css/img/ewm.jpg" alt="" class="tips-img">
+							<img src="/static/image/ewm.jpg" alt="" class="tips-img">
 							<p class="tips">
 								下载全棉<span class="green bold">App</span>有惊喜
 							</p>
 						</div>
 						<div class="width50 text-center">
-							<img src="https://res.purcotton.com//mres/res/mall/css/img/ewm2.jpg" alt="" class="tips-img">
+							<img src="/static/image/ewm2.jpg" alt="" class="tips-img">
 							<p class="tips">
 								关注全棉<span class="green bold">微信公众号</span>
 							</p>
@@ -70,20 +71,7 @@
 								<input id="loginPassword" name="loginPassword" class="input-box" type="password" placeholder="请输入密码">
 							</div>
 						</div>
-						<div class="item">
-							<div class="clearfix">
-								<div class="input-wrap width58 left">
-									<i class="iconfont">&#xe749;</i>
-									<input id="imgCode2" name="imgCode2" class="input-box" type="text" placeholder="输入右侧验证码">
-								</div>
-								<div class="right clearfix">
-									<div class="code-img left">
-										<img id="vpicLog" src="https://www.purcotton.com/ValiCode.ihtml" alt="" class="">
-									</div>
-									<a href="javascript:reloadLog();" class="reload-code">换一张</a>
-								</div>
-							</div>
-						</div>
+						
 						<div class="item word">
 							<p class="red" id="warnMsgLog"></p>
 							<span id="logErrMsg" style="color:red"></span>
@@ -99,13 +87,7 @@
 							<!-- <a href="javascript:;" onclick="loginShop();" class="btn btn-green btn-sm width100">登录 <i>&gt;</i></a> -->
 							<input type="button" value="登录&gt;" class="btn btn-green btn-sm width100" onClick="loginShop();"/>
 						</div>												
-						<div class="item other-login word">
-							使用合作帐号登录：
-							<a href="https://www.purcotton.com/member/memberopenplatform/platformAccess.ihtml?platformType=1"><i class="iconfont" style="color: #32cced;">&#xe786;</i></a>
-							<a href="https://www.purcotton.com/member/memberopenplatform/platformAccess.ihtml?platformType=2"><i class="iconfont" style="color: #f35959;">&#xe61a;</i></a>
-							<a href="https://www.purcotton.com/member/memberopenplatform/platformAccess.ihtml?platformType=3"><i class="iconfont" style="color: #009fe7;">&#xe612;</i></a>
-							<a href="https://www.purcotton.com/member/memberopenplatform/platformAccess.ihtml?platformType=8"><i class="iconfont" style="color: #32CD32;">&#xe66b;</i></a>
-						</div>
+						
 						<p class="hr"></p>
 						<div class="item">
 							<a href="javascript:;" onclick="changeToRegister();" class="btn btn-trans btn-sm width100"><i>&lt;</i> 全棉会员注册</a>
@@ -115,5 +97,7 @@
 			</form> 
 		</div><!-- pop-wrap end -->
 	</div><!-- content-body end -->
+	
+	<footer class="comm-footer-wrap bg-white"></footer>
 	</body>
 </html>

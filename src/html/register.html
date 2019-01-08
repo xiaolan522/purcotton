@@ -2,16 +2,17 @@
 <html lang="zh-cn">
 <head>
 	<meta charset="UTF-8">
-	<title id="title">会员注册</title>
-	<link rel="stylesheet" href="css/com.css" />
-	<link rel="stylesheet" href="css/login.css" />
+	<title id="title">注册</title>
+	<link rel="stylesheet" href="/css/com.css" />
+	<link rel="stylesheet" href="/css/login.css" />
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/register.js"></script>
 	</head>
 <body class="pd0">
 	<!-- 简单头部 -->
 	<div class="container clearfix pd40">
 		<div class="left">
-			<a href="https://www.purcotton.com/" title="首页">
-				<img src="https://res.purcotton.com//mres/res/mall/image/commodity/logo.png" height="36" width="448" alt="">
+			<a href="/index.html" title="首页">
+				<img src="/static/image/logo-2.png" height="36" width="448" alt="">
 			</a>
 		</div>
 	</div>
@@ -21,7 +22,7 @@
 		<!-- 外框 -->
 		<div class="pop-wrap">
 			<!-- 注册框 -->
-			<form action="https://www.purcotton.com/mall/memberLogin/toRegisterSubmit.ihtml" method="post" id="register" name="register" >
+			<form action="" method="post" id="register" name="register" >
 				<div class="register-wrap pop-item">
 					<div class="form-wrap">
 						<div class="title">
@@ -45,31 +46,7 @@
 								<input id="re_password" class="input-box" type="password" placeholder="请再次输入密码确认" onblur="onPwd2CHeckForNewPC();">
 							</div>
 						</div>
-						<div class="item">
-							<div class="clearfix">
-								<div class="input-wrap width58 left">
-									<i class="iconfont">&#xe749;</i>
-									<input id="imageCode" name="imageCode" class="input-box" type="text" placeholder="输入右侧验证码" onblur="onMsgCheckForNewPC();">
-								</div>
-								<div class="right clearfix">
-									<div class="code-img left">
-										<img id="vpicReg" src="https://www.purcotton.com/ValiCode.ihtml" width="60" height="20">
-									</div>
-									<a href="javascript:reloadReg();" class="reload-code">换一张</a>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="clearfix">
-								<div class="input-wrap width58 left">
-									<i class="iconfont">&#xe627;</i>
-									<input id="validateCode" name="validateCode" class="input-box" type="text" placeholder="输入短信验证码" onblur="onTelCodeForNewPC();">
-								</div>
-								<div class="right">
-									<input onClick="getCodeForNewPC();" id="btn" class="btn get-code" value="获取短信验证码">
-								</div>
-							</div>
-						</div>
+						
 						<div class="item word">
 							<p class="red" id="warnMsgReg"></p>
 							<span style="color:red"></span>
@@ -89,5 +66,6 @@
 		</div><!-- pop-wrap end -->
 	</div><!-- content-body end -->
 
+<footer class="comm-footer-wrap bg-white"></footer>
 </body>
 </html>

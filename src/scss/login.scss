@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import "./component/com-footer.scss";
+@import "./component/com-style.scss";
 .content-body {
   background: #ffffff;
   padding-top: 0;
@@ -7,7 +9,7 @@
   position: relative;
   height: 600px;
   margin-bottom: -60px;
-  background: url(https://res.purcotton.com/mres/res/mall/css/img/login-bg.jpg) center top no-repeat;
+  background: url(/static/image/login-bg.jpg) center top no-repeat;
   /* background: url(https://res.purcotton.com/activity/2018/09/30/home/login-pc.jpg) center top no-repeat; */
 }
 .pop-item {
