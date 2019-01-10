@@ -21,7 +21,7 @@
 		<!-- 外框 -->
 		<div class="pop-wrap">
 			<!-- 登录框 -->
-			<form action="login.ihtml" method="post" onSubmit="return loginShop()"  name="login" id="login" >
+			<form name="login" id="login" >
 				<div class="login-wrap pop-item">
 					<div class="code-tips bounce">
 						<div class="triangle"></div>
@@ -36,7 +36,7 @@
 							</a>
 						</div>
 						<div class="code-back hide">
-							<a href="javascript:goBack();" class="btn">
+							<a href="javascript:;"  class="btn" >
 								<span class="bold">&lt;</span> 返回
 							</a>
 						</div>
@@ -55,7 +55,7 @@
 							</p>
 						</div>						
 					</div>
-					<div class="form-wrap">
+					<div class="form-wrap ">
 						<div class="title">
 							登录全棉时代
 						</div>
@@ -79,18 +79,18 @@
 						<div class="item word">
 							<div class="clearfix">
 								<div class="left">
-									<a href="javascript:;" onClick="fixPassword();">忘记密码</a>                                    								
+									<a href="javascript:;" >忘记密码</a>                                    								
 								</div>
 							</div>
 						</div>
 						<div class="item">
-							<!-- <a href="javascript:;" onclick="loginShop();" class="btn btn-green btn-sm width100">登录 <i>&gt;</i></a> -->
-							<input type="button" value="登录&gt;" class="btn btn-green btn-sm width100" onClick="loginShop();"/>
+							
+							<input type="submit" value="登录&gt;" id="loginsubmitBtn" class="btn btn-green btn-sm width100"/>
 						</div>												
 						
 						<p class="hr"></p>
 						<div class="item">
-							<a href="javascript:;" onclick="changeToRegister();" class="btn btn-trans btn-sm width100"><i>&lt;</i> 全棉会员注册</a>
+							<a href="/html/register.html"  class="btn btn-trans btn-sm width100"><i>&lt;</i> 全棉会员注册</a>
 						</div>
 					</div>
 				</div><!-- login-wrap end -->

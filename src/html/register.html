@@ -22,7 +22,7 @@
 		<!-- 外框 -->
 		<div class="pop-wrap">
 			<!-- 注册框 -->
-			<form action="" method="post" id="register" name="register" >
+			<form  id="register" name="register">
 				<div class="register-wrap pop-item">
 					<div class="form-wrap">
 						<div class="title">
@@ -30,20 +30,26 @@
 						</div>
 						<div class="item">
 							<div class="input-wrap clearfix">
+								<i class="iconfont">&#xe6a7;</i>
+								<input id="registerusername" name="username" maxlength="11" class="input-box" type="text" placeholder="请输入用户名">
+							</div>
+						</div>
+						<div class="item">
+							<div class="input-wrap clearfix">
+								<i class="iconfont">&#xe629;</i>
+								<input id="password" name="loginPassWord" class="input-box" type="password" placeholder="请输入密码" >
+							</div>
+						</div>
+						<div class="item">
+							<div class="input-wrap clearfix">
+								<i class="iconfont">&#xe629;</i>
+								<input id="re_password" class="input-box" type="password" placeholder="请再次输入密码确认">
+							</div>
+						</div>
+						<div class="item">
+							<div class="input-wrap clearfix">
 								<i class="iconfont">&#xe7e0;</i>
-								<input id="telephone" name="mobile" maxlength="11" class="input-box" type="text" placeholder="请输入手机号" onblur="checkmobileForNewPC();">
-							</div>
-						</div>
-						<div class="item">
-							<div class="input-wrap clearfix">
-								<i class="iconfont">&#xe629;</i>
-								<input id="password" name="loginPassWord" class="input-box" type="password" placeholder="请输入密码" onblur="onPwdCheckForNewPC();">
-							</div>
-						</div>
-						<div class="item">
-							<div class="input-wrap clearfix">
-								<i class="iconfont">&#xe629;</i>
-								<input id="re_password" class="input-box" type="password" placeholder="请再次输入密码确认" onblur="onPwd2CHeckForNewPC();">
+								<input id="telephone" name="mobile" maxlength="11" class="input-box" type="text" placeholder="请输入手机号" >
 							</div>
 						</div>
 						
@@ -52,12 +58,12 @@
 							<span style="color:red"></span>
 						</div>
 						<div class="item" id="submitBtn">
-							<!-- <a href="javascript:;" class="btn btn-green btn-sm width100">注册 <i>&gt;</i></a> -->
-							<input type="button" value="注册&gt;" onclick="gotoRegisterForNewPC();" class="btn btn-green btn-sm width100">
+							
+							<input type="submit" value="注册&gt;" class="btn btn-green btn-sm width100">
 						</div>
 						<p class="hr"></p>
 						<div class="item">
-							<a href="javascript:;" onclick="changeToLogin();" class="btn btn-trans btn-sm width100"><i>&lt;</i> 已有帐号登录</a>
+							<a href="/html/login.html"  class="btn btn-trans btn-sm width100"><i>&lt;</i> 已有帐号登录</a>
 						</div>
 					</div>
 				</div><!-- register-wrap end -->
