@@ -10,6 +10,7 @@ define(["jquery"], ()=>{
 					resolve();
 				})
 			}).then(() => {
+				
 			})
 		}
 	}

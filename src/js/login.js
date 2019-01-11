@@ -19,7 +19,7 @@ require(["./require.config"], function(){
 	        $(".code-tip").addClass("hide");
 		});
 		/** ajax登录 **/
-		$("#login").on("keydown",function(e){
+		$("#login").on("submit",function(e){
 			$.ajax({
 			type:"POST",
 			url:"http://localhost/project/question_project-2/api/v1/login.php",

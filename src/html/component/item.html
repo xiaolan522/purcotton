@@ -1,0 +1,26 @@
+<!-- 一个二级栏目板块 -->
+<div class="category-second">
+	<!-- 商品列表 -->
+	<div class="list-comm clearfix" id="listComm">
+		<script type="text/html" id="list-template">
+		{{each list item i}}
+		<!-- 商品展示  -->
+		<div class="item">
+			<a href="/html/detail.html?id={{ item.id }}" >
+				<div class="good-img-wrap">
+					<img src="{{ item.img }}" alt="" class="good-img">
+				</div>
+				<div class="good-name">
+					<p class="content">{{ item.title }}</p>
+				</div>
+				<div class="good-price">
+					<span class="discount-price">{{ item.price }}</span>
+				</div>
+			</a>
+		</div>
+		{{/each}}
+		</script>
+	</div><!-- list-comm end -->
+</div><!-- category-second end -->
+			
+		

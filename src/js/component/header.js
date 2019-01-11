@@ -94,15 +94,24 @@ define(["jquery","cookie"], ()=>{
 		search(){
 			//console.log("45465");
 			$("#heade-search").on("keyup",()=>{
+				$("#list").html("");
 				var word=$("#heade-search").val(),
 					url = `https://suggest.taobao.com/sug?code=utf-8&q=${word}&callback=?`;
 				$.getJSON(url,(data)=>{
-					
+					$.each(data.result,function(index, item){
+						$("<li>").html(item[0]).appendTo($("#list"));
+						
+					})
+					$("#list").css("display", "block");
+				$("li").on("click",function(){
+					$("#heade-search").val($(this).html());
+					$("#list").css("display", "none");
+				})
+				
 				})
 			})
 		}
-		
-		
+	
 		
 		
 		

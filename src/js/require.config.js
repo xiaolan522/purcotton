@@ -5,7 +5,10 @@ require.config({
 		"cookie" : "libs/jquery/jquery-plugins/jquery.cookie",
 		"header" : "js/component/header",
 		"footer" : "js/component/footer",
-		"lunbo" : "js/component/com-hot-lunbo"
+		"lunbo" : "js/component/com-hot-lunbo",
+		"item" :"js/component/item",
+		"url":"js/component/url",
+		"template": "libs/template-web"
 	},
 	//不符合AMD规范的模块，垫片
 	shim:{

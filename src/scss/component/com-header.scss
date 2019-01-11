@@ -248,3 +248,26 @@
 .second-menu a:hover {
   color: #000000;
 }
+#list{
+    height: auto;
+    border:1px solid #ccc;  
+    display: none; 
+    position: absolute;
+    top: 33px; 
+    background: #fff;
+}
+#list  li{  
+    width:200px;  
+    height:30px;  
+    line-height: 30px;  
+    text-indent:10px;  
+    font-size: 16px;  
+    list-style: none;  
+    color: #000;
+}  
+ 
+#list  li:hover{  
+    display:block;  
+    background:#ccc;  
+    color:#fff;  
+}  
