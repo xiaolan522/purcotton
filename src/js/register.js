@@ -3,7 +3,6 @@ require(["./require.config"], () => {
 	//引入index需要依赖的模块
 require(["jquery",  "footer"], () => {
 	/* ajax注册 */
-	
 	$("#register").on("submit", function(e){
 		if($.trim($("#registerusername").val())!="" && $.trim($("#password").val())!="" && $.trim($("#telephone").val())!=""){
 			$.ajax({

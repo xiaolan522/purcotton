@@ -1,12 +1,11 @@
 @charset "utf-8";
 @import "./component/com-footer.scss";
-@import "./component/com-header.scss";
 @import "./component/com-style.scss";
 @import "./font.scss";
-@import "./com.scss";
 @import "./index.scss";
 @import "./login.scss";
-
+@import "./com.scss";
+@import "./component/com-header.scss";
 .goods-recommend {
   /*@all_num: 4;*/
   /*@all_width: @all_num * @w + @mr * (@all_num - 1);*/

@@ -205,7 +205,7 @@
   top: -6px;
   width: 18px;
   height: 18px;
-  background: url(../img/select.png) 0 0 no-repeat;
+  background: url(/static/image/select.png) 0 0 no-repeat;
 }
 .goods-msg .tag {
   line-height: 1.2;
@@ -305,28 +305,28 @@
   padding-left: 22px;
   cursor: pointer;
   vertical-align: middle;
-  background: url(../img/btn.png) 0px -52px no-repeat;
+  background: url(/static/image/btn.png) 0px -52px no-repeat;
 }
 .goods-msg .to-buy .attention:hover {
-  background: url(../img/btn.png) 0px -85px no-repeat;
+  background: url(/static/image/btn.png) 0px -85px no-repeat;
 }
 .goods-msg .to-buy .contact {
   width: 21px;
   height: 16px;
   margin-left: 20px;
   padding-left: 22px;
-  background: url(../img/btn.png) 0px -220px no-repeat;
+  background: url(/static/image/btn.png) 0px -220px no-repeat;
   cursor: pointer;
   vertical-align: middle;
 }
 .goods-msg .to-buy .contact:hover {
-  background: url(../img/btn.png) 0px -264px no-repeat;
+  background: url(/static/image/btn.png) 0px -264px no-repeat;
 }
 .goods-msg .to-buy .heart-gray {
-  background: url(../img/btn.png) 0px -52px no-repeat;
+  background: url(./static/image/btn.png) 0px -52px no-repeat;
 }
 .goods-msg .to-buy .heart-pink {
-  background: url(../img/btn.png) 0px -85px no-repeat;
+  background: url(/static/image/btn.png) 0px -85px no-repeat;
 }
 .goods-msg .buynow {
   border: 1px solid #cccccc;
@@ -467,7 +467,7 @@
   height: 12px;
   margin-top: 1px;
   background-color: transparent;
-  background-image: url(../img/star.png);
+  background-image: url(/static/image/star.png);
   background-repeat: no-repeat;
 }
 .evaluate .star0 {

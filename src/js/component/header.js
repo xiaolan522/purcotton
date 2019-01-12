@@ -2,6 +2,7 @@ define(["jquery","cookie"], ()=>{
 	class Header{
 		constructor(){
 			this.init();
+			
 		}
 		//初始化header
 		init(){
@@ -16,6 +17,8 @@ define(["jquery","cookie"], ()=>{
 				_this.showname();
 				_this.scroll();
 				_this.search();
+				_this.top_tab();
+				
 			})
 		}
 		//显示登录用户名
@@ -38,12 +41,17 @@ define(["jquery","cookie"], ()=>{
 				})	
 			}
 		}
-		// 公共头部显示隐藏
+		
+		
+		/* 吸顶功能 2*/
+		// 公共头部显示隐藏切换
 		scroll(){
 			$(window).scroll( () => {
 			this.top_nav();
 			})
 		}
+		
+		/* 吸顶功能 1*/
 		top_nav () {
 			var top = $(window).scrollTop();
 		
@@ -90,7 +98,7 @@ define(["jquery","cookie"], ()=>{
 				});
 			}
 		}
-		
+		/* 搜索框 */
 		search(){
 			//console.log("45465");
 			$("#heade-search").on("keyup",()=>{
@@ -112,9 +120,24 @@ define(["jquery","cookie"], ()=>{
 			})
 		}
 	
+		/*公共头部单独页面css切换*/
+		top_tab(){
+			
+			//console.log($(".first-menu-wrap li>a"));
+			//console.log($(".first-menu-wrap li "));
+			//window.location.pathname
+			$(".first-menu-wrap li>a").each(function(index, item){
+				//console.log(index);
+				if($(item).attr("href") == window.location.pathname){
+					
+					$(".first-menu-wrap li ").eq(index).addClass("cur").siblings().removeClass("cur");
+					
+				}
+			})
+		}
 		
 		
-		
+
 		
 		
 		
