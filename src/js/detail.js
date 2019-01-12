@@ -34,10 +34,11 @@ require(["jquery","url", "template", "header", "footer","cookie"], function($, u
 						//console.log(1)
 						//主图中的大图将第一张图片的src放到大图里面
 						$(".big-img img").eq(0).attr("src",$('.list-img  li img').eq(0).attr('src'));
+						$('.hover-big img').eq(0).attr("src",$('.list-img  li img').eq(0).attr('src'));
 						_this.img_tab();
 						_this.introduce_tab();
 						_this.bug_num_addorsub();
-						_this.hover_big();
+						_this.hover_bigimg();
 					}
 			        }
 			
@@ -50,6 +51,7 @@ require(["jquery","url", "template", "header", "footer","cookie"], function($, u
 					//console.log($(this).find("img"));
 					$(this).addClass("cur").siblings().removeClass("cur");
 					$(".big-img img").eq(0).attr("src",$(this).find("img").attr('src'));
+					$('.hover-big img').eq(0).attr("src",$(this).find("img").attr('src'));
 				})
 			})
 		}
@@ -82,14 +84,46 @@ require(["jquery","url", "template", "header", "footer","cookie"], function($, u
 		}
 		
 		/*放大镜*/
-		hover_big(){
+		hover_bigimg(){
 				
+			var $big_img = $('.big-img'),
+				$hover_img_wrap = $('.hover-big'),
+				$hover_img = $hover_img_wrap.children('img');
+				
+				$big_img.mousemove(function(a){
+					var evt = a || window.event;
+					$hover_img_wrap.css('display','block');
+					var ot = evt.clientY-($('.big-img').offset().top- $(document).scrollTop())-125;
+					var ol = evt.clientX-($('.big-img').offset().left- $(document).scrollLeft())-125;
+					if(ol<=0){
+						ol = 0;
+					}
+					if(ot<=0){
+						ot = 0;
+					}
+					if(ol>=250){
+						ol=250
+					}
+					if(ot>=250){
+						ot=250
+					}
+					$(".big-img span").css({'left':ol,'top':ot})
+					var ott = ot/500*600
+					var oll = ol/500*600
+					$hover_img.css({'left':-oll,'top':-ott})
+				})
+				$big_img.mouseout(function(){
+					$hover_img_wrap.css('display','none')
+				})
+		
+
+
 		}
 		
 		
 	}
 	new Detail();
-//console.log($("#goodsNo").val())
+
 	
 	
 	
